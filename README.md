@@ -1,5 +1,4 @@
 cookies_and_oven
 ================
 
--challenge originally done on private repo
--forked over to continue working and practicing OOJS
+This challenge was originally done on a private repo. Forked over to continue working and practice OOJS.
