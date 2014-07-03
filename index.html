@@ -18,7 +18,25 @@
 </head>
 
 <body>
-  <div class="row">
+  <h2>welcome to bake-a-cookie!</h2>
+  <div id="play">play!</div>
+  <br><br>
+
+  make three types of cookies:<br>
+  <div id="menu">
+    <form id="new_batch" name="new_batch">
+      Type of Cookie:<br>
+      <input name="batch_type" type="text" placeholder="oatmeal raisin"><br>
+      Bake Time:<br>
+      <input name="bake_time" type="number" min="0" max="10"/><br>
+      <input type="submit" value="make batch!">
+    </form>
+  </div>
+
+  <div id="tray">
+  </div>
+
+  <!-- <div class="row">
   <div class="span6">
     <h2 id="prep_table_heading">Prep Table</h2>
     <ul id="prep_batches">
@@ -52,7 +70,7 @@
 
     <button id="bake">Bake for 1 minute</button>
   </div>
-</div>
+</div> -->
 </body>
 
 

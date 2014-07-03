@@ -6,8 +6,38 @@ $(document).ready(function() {
   //listener for "make batch" button
   $('form').on('submit', function(e) {
     e.preventDefault();
-    PrepTableController.makeCookie();
-    $('form')[0].reset();
+
+    if (PrepTableController.clicked >= 3) {
+    }
+    else if (PrepTableController.clicked == 2) {
+        PrepTableController.makeCookie();
+        PrepTableController.clicked = PrepTableController.clicked + 1;
+        $('#tray').append("<div id='cookie'> </div><div id='cookie'> </div><div id='cookie'> </div>")
+        $('form')[0].reset();
+        $('#menu').append("<input type='submit' value='add to oven'></li>")
+    }
+    else {
+        PrepTableController.makeCookie();
+        PrepTableController.clicked = PrepTableController.clicked + 1;
+        $('#tray').append("<div id='cookie'> </div><div id='cookie'> </div><div id='cookie'> </div>")
+        $('form')[0].reset();
+        console.log(PrepTableController.clicked)
+    }
+
+
+    //   if (PrepTableController.checkFullTray()) {
+    //     $('#menu').append("<input type='submit' value='add to oven'></li>")
+    //   }
+    //   else {
+    //     PrepTableController.makeCookie();
+    //     PrepTableController.clicked = PrepTableController.clicked + 1;
+    //     $('#tray').append("<div id='cookie'> </div><div id='cookie'> </div><div id='cookie'> </div>")
+    //     $('form')[0].reset();
+    //   }
+    // }
+    // else {
+    //   console.log('end')
+    // }
   })
 
 

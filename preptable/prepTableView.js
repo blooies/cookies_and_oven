@@ -1,6 +1,5 @@
  var PrepTableView = {
     drawCookies: function(cookies) {
-      console.log('yo')
       $("#prep_batches").empty();
       for (var i = 0; i < cookies.length; i++) {
         html = "<li id=" + i + '>'
@@ -9,13 +8,13 @@
         $('#prep_batches').append(html);
       }
 
-    },
-    removeCookie: function(cookie) {
-      $('#add_oven').click(function() {
-        alert("your cookie has been added to the oven!");
-        var cookie_and_button = $(this).parent().remove();
-        OvenView.draw(our_oven);
-      });
     }
+    // removeCookie: function(cookie) {
+    //   $('#add_oven').click(function() {
+    //     alert("your cookie has been added to the oven!");
+    //     var cookie_and_button = $(this).parent().remove();
+    //     OvenView.draw(our_oven);
+    //   });
+    // }
 
-};
+}
