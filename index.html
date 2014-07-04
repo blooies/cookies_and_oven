@@ -11,8 +11,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="./initialize.js"></script>
   <script type="text/javascript" src="./preptable/prepTableController.js"></script>  
-  <script type="text/javascript" src="./preptable/prepTableView.js"></script>  
+  <script type="text/javascript" src="./applicationController.js"></script>  
   <script type="text/javascript" src="./oven/ovenView.js"></script>  
+  <script type="text/javascript" src="./oven/ovenController.js"></script>  
   <script type="text/javascript" src="./cookieModel.js"></script>
   <script type="text/javascript" src="./ovenModel.js"></script>
 </head>
@@ -36,41 +37,18 @@
   <div id="tray">
   </div>
 
-  <!-- <div class="row">
-  <div class="span6">
-    <h2 id="prep_table_heading">Prep Table</h2>
-    <ul id="prep_batches">
-    </ul>
-    <form id="new_batch" name="new_batch">
-      <label>Cookie type:</label>
-      <input name="batch_type" type="text" placeholder="e.g. 'oatmeal raisin'" />
-      <br />
 
-      <label for="bake_time">Bake time:</label>
-      <input name="bake_time" type="number" min="0" max="20" />
-      <br />
-
-      <input type="submit" value="Make Batch"/>
-    </form>
+  <div id="oven">
+    <div id="window">
+    </div>
+    <div id="bake">bake!
+    </div>
+    <div class="knob one">
+    </div>
+    <div class="knob two">
+    </div>
   </div>
 
-  <div class="span6">
-    <h2>Oven</h2>
-    <table id="oven">
-      <tr>
-        <td id="rack_0">[empty]</td>
-      </tr>
-      <tr>
-        <td id="rack_1">[empty]</td>
-      </tr>
-      <tr>
-        <td id="rack_2">[empty]</td>
-      </tr>
-    </table>
-
-    <button id="bake">Bake for 1 minute</button>
-  </div>
-</div> -->
 </body>
 
 

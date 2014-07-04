@@ -1,4 +1,4 @@
-function Oven() {
+var Oven = function() {
   this.cookies = [];
   this.size = 3;
   this.bakedTime = 0;
@@ -7,14 +7,6 @@ function Oven() {
 Oven.prototype.addItem = function(cookie) {
   this.cookies.push(cookie)
 };
-
-// Oven.prototype.removeItem = function(cookie) {
-//   for (i=0; i < this.cookies.length; i++) {
-//     if (cookie.type == this.cookies[i].type) {
-//       this.cookies.splice(i, 1);
-//     };
-//   }
-// }
 
 Oven.prototype.bake = function() {
   this.bakedTime = this.bakedTime + 1;

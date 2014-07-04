@@ -1,52 +1,77 @@
+/* line 7, application.scss */
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
+/* line 11, application.scss */
 .row {
-  margin-left: -20px; }
+  margin-left: -20px;
+}
 
+/* line 15, application.scss */
 .span6 {
   padding-left: 10px;
   margin-left: 10px;
   max-width: 50%;
   float: left;
-  height: 100%; }
+  height: 100%;
+}
 
+/* line 23, application.scss */
 .span6:last-child {
-  border-left: 1px solid #ddd; }
+  border-left: 1px solid #ddd;
+}
 
+/* line 27, application.scss */
 table#oven {
   background-color: #bbb;
   padding: 5px;
-  margin: 5px; }
+  margin: 5px;
+}
 
+/* line 33, application.scss */
 table#oven td {
   padding: 8px;
-  border-bottom: 2px solid; }
+  border-bottom: 2px solid;
+}
 
+/* line 38, application.scss */
 table#oven td.raw {
   background-color: red;
-  color: white; }
+  color: white;
+}
 
+/* line 43, application.scss */
 table#oven td.still_gooey {
   background-color: yellow;
-  color: black; }
+  color: black;
+}
 
+/* line 48, application.scss */
 table#oven td.just_right {
   background-color: green;
-  color: white; }
+  color: white;
+}
 
+/* line 53, application.scss */
 table#oven td.crispy {
   background-color: black;
-  color: white; }
+  color: white;
+}
 
+/* line 58, application.scss */
 table#oven span.status {
   margin-left: 5px;
   font-size: 0.8em;
-  font-style: italic; }
+  font-style: italic;
+}
 
+/* line 66, application.scss */
 #menu {
-  display: inline-block; }
+  display: inline-block;
+}
 
+/* line 70, application.scss */
 #tray {
   border: 2px solid black;
   width: 100px;
@@ -54,12 +79,121 @@ table#oven span.status {
   display: inline-block;
   position: absolute;
   margin-left: 200px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 81, application.scss */
 #cookie {
   width: 27px;
   height: 27px;
   margin: 3px;
   border-radius: 15px;
   background-color: #d4ad7e;
-  float: left; }
+  float: left;
+}
+
+/* line 91, application.scss */
+#oven {
+  width: 350px;
+  height: 200px;
+  border: 10px solid black;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+}
+
+/* line 101, application.scss */
+#window {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 230px;
+  height: 150px;
+  border: 5px solid black;
+  position: relative;
+}
+
+/* line 110, application.scss */
+#window:before {
+  content: '';
+  width: 230px;
+  height: 10px;
+  position: absolute;
+  top: -20px;
+  border: 2px solid green;
+  background-color: #966132;
+}
+
+/* line 120, application.scss */
+#window:after {
+  content: '';
+  width: 230px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  background-color: #21190b;
+}
+
+/* line 130, application.scss */
+#bake {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  width: 50px;
+  height: 25px;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 142, application.scss */
+#raw-cookie {
+  width: 50px;
+  height: 20px;
+  background-color: #d4ad7e;
+  border-radius: 20px 20px 0 0;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* line 151, application.scss */
+#cookie-holder {
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+}
+
+/* line 157, application.scss */
+.knob {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50px;
+}
+
+/* line 164, application.scss */
+.one {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+}
+
+/* line 170, application.scss */
+.two {
+  position: absolute;
+  top: 130px;
+  right: 30px;
+}
+
+/* line 176, application.scss */
+.still_gooey {
+  background-color: #c18644 !important;
+}
+
+/* line 180, application.scss */
+.just_right {
+  background-color: #966132 !important;
+}
+
+/* line 184, application.scss */
+.crispy {
+  background-color: #21190b !important;
+}
