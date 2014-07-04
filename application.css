@@ -94,8 +94,8 @@ table#oven span.status {
 
 /* line 91, application.scss */
 #oven {
-  width: 350px;
-  height: 200px;
+  width: 370px;
+  height: 220px;
   border: 10px solid black;
   border-radius: 30px 30px 0 0;
   position: relative;
@@ -103,7 +103,7 @@ table#oven span.status {
 
 /* line 101, application.scss */
 #window {
-  margin-top: 25px;
+  margin-top: 45px;
   margin-left: 25px;
   width: 230px;
   height: 150px;
@@ -114,12 +114,12 @@ table#oven span.status {
 /* line 110, application.scss */
 #window:before {
   content: '';
-  width: 230px;
-  height: 10px;
+  width: 240px;
+  height: 30px;
   position: absolute;
-  top: -20px;
-  border: 2px solid green;
-  background-color: #966132;
+  top: -40px;
+  left: -5px;
+  background-color: grey;
 }
 
 /* line 120, application.scss */
@@ -129,22 +129,36 @@ table#oven span.status {
   height: 50px;
   position: absolute;
   bottom: 0;
-  background-color: #21190b;
+  background-color: #000;
 }
 
-/* line 130, application.scss */
+/* line 129, application.scss */
+#controls {
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+
+/* line 135, application.scss */
 #bake {
   position: absolute;
-  top: 40px;
-  right: 30px;
-  width: 50px;
-  height: 25px;
+  top: 20px;
+  right: 20px;
+  width: 70px;
+  height: 30px;
   background-color: #000;
   text-align: center;
+  border-radius: 5px;
   color: #fff;
 }
 
-/* line 142, application.scss */
+/* line 147, application.scss */
+#bake text {
+  position: relative;
+  top: 5px;
+}
+
+/* line 152, application.scss */
 #raw-cookie {
   width: 50px;
   height: 20px;
@@ -154,46 +168,61 @@ table#oven span.status {
   margin: 10px;
 }
 
-/* line 151, application.scss */
+/* line 161, application.scss */
 #cookie-holder {
   position: absolute;
   bottom: 60px;
   left: 30px;
 }
 
-/* line 157, application.scss */
+/* line 167, application.scss */
 .knob {
   width: 40px;
   height: 40px;
   background-color: #000;
   border-radius: 50px;
+  position: relative;
+}
+/* line 174, application.scss */
+.knob:before {
+  content: '';
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  background-color: grey;
+  top: 5px;
+  left: 15px;
+  transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  -webkit-transform: rotate(110deg);
+  border-radius: 10px;
 }
 
-/* line 164, application.scss */
+/* line 191, application.scss */
 .one {
   position: absolute;
-  top: 80px;
+  top: 70px;
   right: 30px;
 }
 
-/* line 170, application.scss */
+/* line 197, application.scss */
 .two {
   position: absolute;
   top: 130px;
   right: 30px;
 }
 
-/* line 176, application.scss */
+/* line 203, application.scss */
 .still_gooey {
   background-color: #c18644 !important;
 }
 
-/* line 180, application.scss */
+/* line 207, application.scss */
 .just_right {
   background-color: #966132 !important;
 }
 
-/* line 184, application.scss */
+/* line 211, application.scss */
 .crispy {
   background-color: #21190b !important;
 }
