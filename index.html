@@ -7,7 +7,7 @@
   <title>Behavior Drill: Cookies and Ovens - jsFiddle demo</title>
 
   <link rel="stylesheet" type="text/css" href="./application.css" />
-
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,700' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="./initialize.js"></script>
   <script type="text/javascript" src="./preptable/prepTableController.js"></script>  
@@ -27,9 +27,9 @@
   <div id="menu">
     <form id="new_batch" name="new_batch">
       Type of Cookie:<br>
-      <input name="batch_type" type="text" placeholder="oatmeal raisin"><br>
+      <input name="batch_type" type="text" placeholder="oatmeal raisin" required><br>
       Bake Time:<br>
-      <input name="bake_time" type="number" min="0" max="10"/><br>
+      <input name="bake_time" type="number" min="0" max="10"/ required><br>
       <input type="submit" value="make batch!">
     </form>
   </div>
@@ -40,9 +40,10 @@
 
   <div id="oven">
     <div id="window">
+      <div id="messageholder"></div>
     </div>
     <div id ="controls">
-      <div id="bake"><text>bake!</text>
+      <div id="bake"><p>bake!</p>
       </div>
       <div class="knob one">
       </div>

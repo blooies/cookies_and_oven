@@ -144,7 +144,7 @@ table#oven span.status {
   color: #fff;
 }
 
-#bake text {
+#bake p {
   position: relative;
   top: 5px;
 }
@@ -157,6 +157,23 @@ table#oven span.status {
   display: inline-block;
   margin: 10px;
 }
+
+#messageholder {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+}
+
+#message {
+  font-family: raleway;
+  font-size: 9px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 50px;
+  width: 10px;
+  height: 10px;
+}
+
 
 #cookie-holder {
   position: absolute;

@@ -37,6 +37,8 @@ ApplicationController.prototype.listenForAddOven = function() {
     for (var i = 0; i < tray.length; i++) {
       self.ovenController.oven.addItem(tray[i])
     }
+    console.log(self.ovenController.oven.cookies)
+    $('#messageholder').append("<div id='message'></div><div id='message'></div><div id='message'></div>")
     $('#oven').append("<div id='cookie-holder'><div id='raw-cookie'></div><div id='raw-cookie'></div><div id='raw-cookie'></div></div>")
   })
 }

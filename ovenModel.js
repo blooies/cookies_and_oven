@@ -1,6 +1,5 @@
 var Oven = function() {
   this.cookies = [];
-  this.size = 3;
   this.bakedTime = 0;
 };
 
