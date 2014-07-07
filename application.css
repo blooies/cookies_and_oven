@@ -277,28 +277,32 @@ h2 {
 .hidden, .oven_group, .menu_group, #tray {
   display: none;
 }
+/* line 272, application.scss */
+.hidden#cookie_column, .oven_group#cookie_column, .menu_group#cookie_column, #tray#cookie_column {
+  display: none;
+}
 
-/* line 276, application.scss */
+/* line 279, application.scss */
 #add_oven {
   position: absolute;
   right: 490px;
   top: 250px;
 }
 
-/* line 282, application.scss */
+/* line 285, application.scss */
 .showing {
   display: block;
 }
-/* line 286, application.scss */
+/* line 289, application.scss */
 .showing.play_box {
   margin: 100px auto;
 }
-/* line 289, application.scss */
+/* line 292, application.scss */
 .showing.menu_group {
   display: inline-block;
   margin: 30px;
 }
-/* line 293, application.scss */
+/* line 296, application.scss */
 .showing#tray {
   border: 2px solid black;
   width: 200px;

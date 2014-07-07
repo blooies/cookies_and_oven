@@ -269,6 +269,9 @@ h2 {
 
 .hidden, .oven_group, .menu_group, #tray {
   display: none;
+  &#cookie_column {
+    display: none;
+  }
 }
 
 

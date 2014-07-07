@@ -49,6 +49,7 @@ ApplicationController.prototype.listenForAddOven = function() {
     // $('.play_box').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
       // $('.play_box').addClass('hidden');
       // $('#tray').addClass('hidden')
+      $('#tray #cookie_column').addClass('hidden')
       $('.oven_group').addClass('showing animated_fast bounceTop')
     // })
   })
