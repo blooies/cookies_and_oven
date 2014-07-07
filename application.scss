@@ -12,7 +12,6 @@ body {
   text-align: center;
 }
 
-
 h2 {
   font-size: 150px;
   margin: 0px;
@@ -34,15 +33,14 @@ h2 {
   text-transform: uppercase;
 }
 
-
 #play_button, #add_oven {
+  font-size: 24px;
   color: #fff;
   background-color: $blue;
   width: 150px;
   height: 30px;
   border-radius: 25px;
   padding: 10px;
-  font-size: 24px;
   margin: 40px auto;
   &:hover {
     background-color: $darkBlue;
@@ -51,14 +49,13 @@ h2 {
 }
 
 #make_batch {
+  font-size: 15px;
   color: #fff;
   background-color: $blue;
-  font-weight: thin;
   width: 150px;
   height: 20px;
   padding: 5px;
   border-radius: 25px;
-  font-size: 15px;
   &:hover {
     background-color: $darkBlue;
     cursor: pointer;
@@ -69,7 +66,6 @@ h2 {
   display: inline-block;
   border: 2px dotted black;
   padding: 70px 25px;
-
   input {
     width: 150px;
     height: 25px;
@@ -78,14 +74,10 @@ h2 {
   }
 }
 
-
-
 #make {
   font-family: 'pacifico';
   font-size: 24px;
 }
-
-
 
 #cookie {
   width: 45px;
@@ -101,8 +93,6 @@ h2 {
   margin-left: 10px;
 }
 
-
-
 #oven {
   width: 370px;
   height: 220px;
@@ -111,8 +101,6 @@ h2 {
   position: relative;
   margin: 30px auto;
 }
-
-
 
 #window {
   margin-top: 45px;
@@ -165,7 +153,6 @@ h2 {
   }
 }
 
-
 #bake text {
   position: relative;
   top: 5px;
@@ -194,7 +181,6 @@ h2 {
   width: 10px;
   height: 10px;
 }
-
 
 #cookie-holder {
   position: absolute;
@@ -239,8 +225,6 @@ h2 {
   }
 }
 
-
-
 .one {
   position: absolute;
   top: 70px;
@@ -265,16 +249,9 @@ h2 {
   background-color: $burnt !important;
 }
 
-
-
 .hidden, .oven_box, .menu_group, #tray {
   display: none;
-  &#cookie_column {
-    display: none;
-  }
 }
-
-
 
 #add_oven {
     position: absolute;
@@ -284,7 +261,6 @@ h2 {
 
 .showing {
   display: block;
-
 
   &.play_box {
     margin: 100px auto;
@@ -301,5 +277,4 @@ h2 {
     margin: 30px;
     overflow: hidden;
   }
- 
 }

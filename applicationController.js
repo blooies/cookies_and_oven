@@ -41,7 +41,6 @@ ApplicationController.prototype.listenForMakeBatch = function() {
         $('form')[0].reset();
         $('#tray').after("<div id='add_oven'>add to oven</div>")
         $('#add_oven').addClass('animated_fast flyInRight')
-
     }
     else {
         self.prepTableController.makeCookie();
@@ -60,11 +59,10 @@ ApplicationController.prototype.listenForAddOven = function() {
     for (var i = 0; i < tray.length; i++) {
       self.ovenController.oven.addItem(tray[i])
     }
-    $('#messageholder').append("<div id='message'></div><div id='message'></div><div id='message'></div>")
+    $('#message_holder').append("<div id='message'></div><div id='message'></div><div id='message'></div>")
     $('#tray #cookie_column').addClass('hidden')
     $('#oven').append("<div id='cookie-holder'><div id='raw-cookie'></div><div id='raw-cookie'></div><div id='raw-cookie'></div></div>")
     $('.oven_box').addClass('showing animated_fast bounceTop')
-
   })
 }
 

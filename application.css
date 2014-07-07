@@ -4,72 +4,71 @@ body {
   text-align: center;
 }
 
-/* line 16, application.scss */
+/* line 15, application.scss */
 h2 {
   font-size: 150px;
   margin: 0px;
   padding: 0px;
 }
 
-/* line 22, application.scss */
+/* line 21, application.scss */
 #welcome {
   font-family: 'pacifico';
   font-size: 70px;
 }
 
-/* line 27, application.scss */
+/* line 26, application.scss */
 #bake_text {
   display: block;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
-/* line 33, application.scss */
+/* line 32, application.scss */
 #cookie_text {
   text-transform: uppercase;
 }
 
-/* line 38, application.scss */
+/* line 36, application.scss */
 #play_button, #add_oven {
+  font-size: 24px;
   color: #fff;
   background-color: #82c4d6;
   width: 150px;
   height: 30px;
   border-radius: 25px;
   padding: 10px;
-  font-size: 24px;
   margin: 40px auto;
 }
-/* line 47, application.scss */
+/* line 45, application.scss */
 #play_button:hover, #add_oven:hover {
   background-color: #5db2c8;
   cursor: pointer;
 }
 
-/* line 53, application.scss */
+/* line 51, application.scss */
 #make_batch {
+  font-size: 15px;
   color: #fff;
   background-color: #82c4d6;
-  font-weight: thin;
   width: 150px;
   height: 20px;
   padding: 5px;
   border-radius: 25px;
-  font-size: 15px;
 }
-/* line 62, application.scss */
+/* line 59, application.scss */
 #make_batch:hover {
   background-color: #5db2c8;
   cursor: pointer;
 }
 
-/* line 68, application.scss */
+/* line 65, application.scss */
 #menu {
   display: inline-block;
   border: 2px dotted black;
   padding: 70px 25px;
 }
-/* line 73, application.scss */
+/* line 69, application.scss */
 #menu input {
   width: 150px;
   height: 25px;
@@ -77,13 +76,13 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* line 83, application.scss */
+/* line 77, application.scss */
 #make {
   font-family: 'pacifico';
   font-size: 24px;
 }
 
-/* line 90, application.scss */
+/* line 82, application.scss */
 #cookie {
   width: 45px;
   height: 45px;
@@ -93,13 +92,13 @@ h2 {
   display: block;
 }
 
-/* line 99, application.scss */
+/* line 91, application.scss */
 #cookie_column {
   float: left;
   margin-left: 10px;
 }
 
-/* line 106, application.scss */
+/* line 96, application.scss */
 #oven {
   width: 370px;
   height: 220px;
@@ -109,7 +108,7 @@ h2 {
   margin: 30px auto;
 }
 
-/* line 117, application.scss */
+/* line 105, application.scss */
 #window {
   margin-top: 45px;
   margin-left: 25px;
@@ -119,7 +118,7 @@ h2 {
   position: relative;
 }
 
-/* line 126, application.scss */
+/* line 114, application.scss */
 #window:before {
   content: '';
   width: 240px;
@@ -130,7 +129,7 @@ h2 {
   background-color: grey;
 }
 
-/* line 136, application.scss */
+/* line 124, application.scss */
 #window:after {
   content: '';
   width: 230px;
@@ -141,14 +140,14 @@ h2 {
   background-color: #000;
 }
 
-/* line 146, application.scss */
+/* line 134, application.scss */
 #controls {
   position: absolute;
   top: 25px;
   right: 0;
 }
 
-/* line 152, application.scss */
+/* line 140, application.scss */
 #bake {
   position: absolute;
   top: 20px;
@@ -160,19 +159,19 @@ h2 {
   border-radius: 5px;
   color: #fff;
 }
-/* line 162, application.scss */
+/* line 150, application.scss */
 #bake:hover {
   background-color: #5db2c8;
   cursor: pointer;
 }
 
-/* line 169, application.scss */
+/* line 156, application.scss */
 #bake text {
   position: relative;
   top: 5px;
 }
 
-/* line 174, application.scss */
+/* line 161, application.scss */
 #raw-cookie {
   width: 50px;
   height: 20px;
@@ -182,14 +181,14 @@ h2 {
   margin: 10px;
 }
 
-/* line 183, application.scss */
+/* line 170, application.scss */
 #message_holder {
   position: absolute;
   top: 50px;
   text-align: center;
 }
 
-/* line 189, application.scss */
+/* line 176, application.scss */
 #message {
   font-size: 15px;
   display: inline-block;
@@ -199,14 +198,14 @@ h2 {
   height: 10px;
 }
 
-/* line 199, application.scss */
+/* line 185, application.scss */
 #cookie-holder {
   position: absolute;
   bottom: 60px;
   left: 42px;
 }
 
-/* line 205, application.scss */
+/* line 191, application.scss */
 .knob {
   width: 40px;
   height: 40px;
@@ -214,7 +213,7 @@ h2 {
   border-radius: 50px;
   position: relative;
 }
-/* line 212, application.scss */
+/* line 198, application.scss */
 .knob:before {
   content: '';
   z-index: 1;
@@ -229,7 +228,7 @@ h2 {
   -webkit-transform: rotate(110deg);
   border-radius: 10px;
 }
-/* line 227, application.scss */
+/* line 213, application.scss */
 .knob:after {
   content: '';
   width: 12px;
@@ -244,65 +243,61 @@ h2 {
   border-radius: 10px;
 }
 
-/* line 244, application.scss */
+/* line 228, application.scss */
 .one {
   position: absolute;
   top: 70px;
   right: 30px;
 }
 
-/* line 250, application.scss */
+/* line 234, application.scss */
 .two {
   position: absolute;
   top: 130px;
   right: 30px;
 }
 
-/* line 256, application.scss */
+/* line 240, application.scss */
 .still_gooey {
   background-color: #c18644 !important;
 }
 
-/* line 260, application.scss */
+/* line 244, application.scss */
 .just_right {
   background-color: #966132 !important;
 }
 
-/* line 264, application.scss */
+/* line 248, application.scss */
 .crispy {
   background-color: #21190b !important;
 }
 
-/* line 270, application.scss */
+/* line 252, application.scss */
 .hidden, .oven_box, .menu_group, #tray {
   display: none;
 }
-/* line 272, application.scss */
-.hidden#cookie_column, .oven_box#cookie_column, .menu_group#cookie_column, #tray#cookie_column {
-  display: none;
-}
 
-/* line 279, application.scss */
+/* line 256, application.scss */
 #add_oven {
   position: absolute;
   right: 490px;
   top: 250px;
 }
 
-/* line 285, application.scss */
+/* line 262, application.scss */
 .showing {
   display: block;
 }
-/* line 289, application.scss */
+/* line 265, application.scss */
 .showing.play_box {
   margin: 100px auto;
 }
-/* line 292, application.scss */
+/* line 268, application.scss */
 .showing.menu_group {
   display: inline-block;
   margin: 30px;
 }
-/* line 296, application.scss */
+/* line 272, application.scss */
 .showing#tray {
   border: 2px solid black;
   width: 200px;
