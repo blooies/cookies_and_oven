@@ -138,10 +138,6 @@
 
 
 /*FLYIN LEFT ANIMATION*/
-
-
-
-
 @-webkit-keyframes flyInLeft{
   0% {
     opacity: 0;
@@ -198,10 +194,6 @@
 
 
 /*FLYIN RIGHT ANIMATION*/
-
-
-
-
 @-webkit-keyframes flyInRight{
   0% {
     opacity: 0;
@@ -253,5 +245,3 @@
   -o-animation-name: flyInRight;
   animation-name: flyInRight;
 }
-
-

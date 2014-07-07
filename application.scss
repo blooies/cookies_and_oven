@@ -180,7 +180,7 @@ h2 {
   margin: 10px;
 }
 
-#messageholder {
+#message_holder {
   position: absolute;
   top: 50px;
   text-align: center;
@@ -267,7 +267,7 @@ h2 {
 
 
 
-.hidden, .oven_group, .menu_group, #tray {
+.hidden, .oven_box, .menu_group, #tray {
   display: none;
   &#cookie_column {
     display: none;

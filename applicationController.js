@@ -2,9 +2,30 @@ var ApplicationController = function(prepTableController, ovenController) {
 	this.prepTableController = prepTableController;
 	this.ovenController = ovenController;
 	this.clicked = 0;
+  this.applyAnimations();
+  this.listenForPlayButton();
 	this.listenForMakeBatch();
 	this.listenForAddOven();
 };
+
+
+ApplicationController.prototype.applyAnimations = function() {
+    $('h2').addClass('animated bounceTop')
+    $('#play_button').addClass('animated bounceTop')
+}
+
+
+ApplicationController.prototype.listenForPlayButton = function() {
+  $('#play_button').on('click', function() {
+    $('.intro').addClass('animated_fast slideDown')
+
+    $('.intro').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      $('.intro').addClass('hidden');
+      $('.menu_group').addClass('showing animated_fast flyInLeft');
+      $('#tray').addClass('showing animated_fast flyInRight');
+    });
+  })
+}
 
 
 ApplicationController.prototype.listenForMakeBatch = function() {
@@ -35,17 +56,14 @@ ApplicationController.prototype.listenForMakeBatch = function() {
 ApplicationController.prototype.listenForAddOven = function() {
   var self = this;
   $(document).one('click', '#add_oven', function(e) {
-    console.log('yo clicked!!!')
   	var tray = self.prepTableController.tray
     for (var i = 0; i < tray.length; i++) {
       self.ovenController.oven.addItem(tray[i])
     }
     $('#messageholder').append("<div id='message'></div><div id='message'></div><div id='message'></div>")
+    $('#tray #cookie_column').addClass('hidden')
     $('#oven').append("<div id='cookie-holder'><div id='raw-cookie'></div><div id='raw-cookie'></div><div id='raw-cookie'></div></div>")
-
-
-      $('#tray #cookie_column').addClass('hidden')
-      $('.oven_group').addClass('showing animated_fast bounceTop')
+    $('.oven_box').addClass('showing animated_fast bounceTop')
 
   })
 }

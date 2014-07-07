@@ -183,7 +183,7 @@ h2 {
 }
 
 /* line 183, application.scss */
-#messageholder {
+#message_holder {
   position: absolute;
   top: 50px;
   text-align: center;
@@ -274,11 +274,11 @@ h2 {
 }
 
 /* line 270, application.scss */
-.hidden, .oven_group, .menu_group, #tray {
+.hidden, .oven_box, .menu_group, #tray {
   display: none;
 }
 /* line 272, application.scss */
-.hidden#cookie_column, .oven_group#cookie_column, .menu_group#cookie_column, #tray#cookie_column {
+.hidden#cookie_column, .oven_box#cookie_column, .menu_group#cookie_column, #tray#cookie_column {
   display: none;
 }
 
