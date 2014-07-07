@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" type="text/css" href="./application.css" />
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="./initialize.js"></script>
   <script type="text/javascript" src="./preptable/prepTableController.js"></script>  
@@ -19,38 +21,43 @@
 </head>
 
 <body>
-  <h2>welcome to bake-a-cookie!</h2>
-  <div id="play">play!</div>
-  <br><br>
+  <section class='intro_game'>
+    <h2><text id='welcome'>welcome to</text><text id='bake_text'>bake-a</text><text id='cookie_text'>cookie!</text></h2>
+    <div id="play_button">play!</div>
+    <br><br>
+  </section>
 
-  make three types of cookies:<br>
-  <div id="menu">
-    <form id="new_batch" name="new_batch">
-      Type of Cookie:<br>
-      <input name="batch_type" type="text" placeholder="oatmeal raisin" required><br>
-      Bake Time:<br>
-      <input name="bake_time" type="number" min="0" max="10"/ required><br>
-      <input type="submit" value="make batch!">
-    </form>
-  </div>
-
-  <div id="tray">
-  </div>
-
-
-  <div id="oven">
-    <div id="window">
-      <div id="messageholder"></div>
+  <section class='menu_group'>
+    make three types of cookies:<br>
+    <div id="menu">
+      <form id="new_batch" name="new_batch">
+        Type of Cookie:<br>
+        <input name="batch_type" type="text" placeholder="oatmeal raisin" required><br>
+        Bake Time:<br>
+        <input name="bake_time" type="number" min="0" max="10"/ required><br>
+        <input type="submit" value="make batch!">
+      </form>
     </div>
-    <div id ="controls">
-      <div id="bake"><p>bake!</p>
+
+    <div id="tray">
+    </div>
+  </section>
+
+  <section class='oven_group'>
+    <div id="oven">
+      <div id="window">
+        <div id="messageholder"></div>
       </div>
-      <div class="knob one">
-      </div>
-      <div class="knob two">
+      <div id ="controls">
+        <div id="bake"><p>bake!</p>
+        </div>
+        <div class="knob one">
+        </div>
+        <div class="knob two">
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
 </body>
 

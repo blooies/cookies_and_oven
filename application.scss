@@ -2,10 +2,14 @@ $raw: #d4ad7e;
 $gooey: #c18644;
 $just-right: #966132;
 $burnt: #21190b;
-
+$blue: #82c4d6;
+$darkBlue: #5db2c8;
+$grey: #797979;
+$darkGrey: #606060;
 
 body {
-  font-family: sans-serif;
+  font-family: 'pathway gothic one';
+  text-align: center;
 }
 
 .row {
@@ -61,6 +65,42 @@ table#oven span.status {
   font-style: italic;
 }
 
+h2 {
+  font-size: 150px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#welcome {
+  font-family: 'pacifico';
+  font-size: 70px;
+}
+
+#bake_text {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+#cookie_text {
+  text-transform: uppercase;
+}
+
+
+#play_button {
+  background-color: $blue;
+  width: 150px;
+  height: 30px;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 24px;
+  margin: 40px auto;
+}
+
+#play_button:hover {
+  background-color: $darkBlue;
+  cursor: pointer;
+}
 
 
 #menu {
@@ -227,4 +267,157 @@ table#oven span.status {
 
 .crispy {
   background-color: $burnt !important;
+}
+
+
+
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+       -o-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+       -o-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+
+.animated_fast {
+  -webkit-animation-duration: .2s;
+     -moz-animation-duration: .2s;
+       -o-animation-duration: .2s;
+          animation-duration: .2s;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+       -o-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes bounceTop{
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes bounceTop {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes bounceTop {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+@keyframes bounceTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bounceTop {
+  -webkit-animation-name: bounceTop;
+  -moz-animation-name: bounceTop;
+  -o-animation-name: bounceTop;
+  animation-name: bounceTop;
+}
+
+
+
+
+
+
+@-webkit-keyframes slideDown{
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(500px);
+  }
+}
+
+@-moz-keyframes slideDown {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(500px);
+  }
+}
+@-o-keyframes slideDown {
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateY(500px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+}
+
+.slideDown {
+  -webkit-animation-name: slideDown;
+  -moz-animation-name: slideDown;
+  -o-animation-name: slideDown;
+  animation-name: slideDown;
+
+}
+
+.menu_group, .oven_group {
+  display: none;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.showing {
+  display: block;
 }
