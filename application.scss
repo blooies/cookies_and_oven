@@ -48,6 +48,12 @@ h2 {
   }
 }
 
+#add_oven {
+    position: relative;
+    left: 145px;
+    top: -150px;
+}
+
 #make_batch {
   font-size: 15px;
   color: #fff;
@@ -251,12 +257,6 @@ h2 {
 
 .hidden, .oven_box, .menu_group, #tray {
   display: none;
-}
-
-#add_oven {
-    position: absolute;
-    right: 490px;
-    top: 250px;
 }
 
 .showing {
