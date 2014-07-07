@@ -11,9 +11,17 @@ $(document).ready(function() {
 
 		$('.intro_game').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
 			$('.intro_game').addClass('hidden');
-			$('.menu_group').addClass('showing animated_fast bounceTop')
+			$('.menu_group').addClass('showing animated_fast flyInLeft')
+			$('#tray').addClass('showing animated_fast flyInRight')
 		});
-		
-
 	})
+
+
+	// $('#add_oven').on('click', function() {
+	// 	console.log('clicked again!!!')
+	// 	$('.play_box').addClass('hidden')
+	// 	$('#tray').addClass('hidden')
+	// 	$('.oven_group').addClass('showing')
+	// })
+
 });

@@ -7,7 +7,7 @@
   <title>Behavior Drill: Cookies and Ovens - jsFiddle demo</title>
 
   <link rel="stylesheet" type="text/css" href="./application.css" />
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./animation.css" />
   <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -27,21 +27,23 @@
     <br><br>
   </section>
 
-  <section class='menu_group'>
-    make three types of cookies:<br>
-    <div id="menu">
-      <form id="new_batch" name="new_batch">
-        Type of Cookie:<br>
-        <input name="batch_type" type="text" placeholder="oatmeal raisin" required><br>
-        Bake Time:<br>
-        <input name="bake_time" type="number" min="0" max="10"/ required><br>
-        <input type="submit" value="make batch!">
-      </form>
-    </div>
-
-    <div id="tray">
-    </div>
+<section class='play_box'>
+    <section class='menu_group'>
+      <text id="make">make 3 types of cookies:</text><br>
+      <div id="menu">
+        <form id="new_batch" name="new_batch">
+          Type of Cookie:<br>
+          <input name="batch_type" type="text" placeholder="oatmeal raisin" required><br>
+          Bake Time:<br>
+          <input name="bake_time" type="number" min="0" max="10"/ required><br>
+          <div id="make_batch">make batch!</div>
+        </form>
+      </div>
   </section>
+
+      <div id="tray">
+      </div>
+</section>
 
   <section class='oven_group'>
     <div id="oven">
@@ -49,7 +51,7 @@
         <div id="messageholder"></div>
       </div>
       <div id ="controls">
-        <div id="bake"><p>bake!</p>
+        <div id="bake"><text>bake!</text>
         </div>
         <div class="knob one">
         </div>

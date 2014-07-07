@@ -4,66 +4,14 @@ $just-right: #966132;
 $burnt: #21190b;
 $blue: #82c4d6;
 $darkBlue: #5db2c8;
-$grey: #797979;
-$darkGrey: #606060;
+$grey: #868686;
+$darkGrey: #2b2b2b;
 
 body {
   font-family: 'pathway gothic one';
   text-align: center;
 }
 
-.row {
-  margin-left: -20px;
-}
-
-.span6 {
-  padding-left: 10px;
-  margin-left: 10px;
-  max-width: 50%;
-  float: left;
-  height: 100%;
-}
-
-.span6:last-child {
-  border-left: 1px solid #ddd;
-}
-
-table#oven {
-  background-color: #bbb;
-  padding: 5px;
-  margin: 5px;
-}
-
-table#oven td {
-  padding: 8px;
-  border-bottom: 2px solid;
-}
-
-table#oven td.raw {
-  background-color: red;
-  color: white;
-}
-
-table#oven td.still_gooey {
-  background-color: yellow;
-  color: black;
-}
-
-table#oven td.just_right {
-  background-color: green;
-  color: white;
-}
-
-table#oven td.crispy {
-  background-color: black;
-  color: white;
-}
-
-table#oven span.status {
-  margin-left: 5px;
-  font-size: 0.8em;
-  font-style: italic;
-}
 
 h2 {
   font-size: 150px;
@@ -87,7 +35,8 @@ h2 {
 }
 
 
-#play_button {
+#play_button, #add_oven {
+  color: #fff;
   background-color: $blue;
   width: 150px;
   height: 30px;
@@ -95,37 +44,63 @@ h2 {
   padding: 10px;
   font-size: 24px;
   margin: 40px auto;
+  &:hover {
+    background-color: $darkBlue;
+    cursor: pointer;
+  }
 }
 
-#play_button:hover {
-  background-color: $darkBlue;
-  cursor: pointer;
+#make_batch {
+  color: #fff;
+  background-color: $blue;
+  font-weight: thin;
+  width: 150px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 15px;
+  &:hover {
+    background-color: $darkBlue;
+    cursor: pointer;
+  }
 }
-
 
 #menu {
   display: inline-block;
+  border: 2px dotted black;
+  padding: 70px 25px;
+
+  input {
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 }
 
-#tray {
-  border: 2px solid black;
-  width: 100px;
-  height: 125px;
-  display: inline-block;
-  position: absolute;
-  margin-left: 200px;
-  overflow: hidden;
 
+
+#make {
+  font-family: 'pacifico';
+  font-size: 24px;
 }
+
+
 
 #cookie {
-  width: 27px;
-  height: 27px;
+  width: 45px;
+  height: 45px;
   margin: 3px;
-  border-radius: 15px;
+  border-radius: 30px;
   background-color: $raw;
-  float: left;
+  display: block;
 }
+
+#cookie_column {
+  float: left;
+  margin-left: 10px;
+}
+
 
 
 #oven {
@@ -134,6 +109,7 @@ h2 {
   border: 10px solid black;
   border-radius: 30px 30px 0 0;
   position: relative;
+  margin: 30px auto;
 }
 
 
@@ -163,6 +139,7 @@ h2 {
   height: 50px;
   position: absolute;
   bottom: 0;
+  left: 0;
   background-color: #000;
 }
 
@@ -178,13 +155,18 @@ h2 {
   right: 20px;
   width: 70px;
   height: 30px;
-  background-color: #000;
+  background-color: $blue;
   text-align: center;
   border-radius: 5px;
   color: #fff;
+  &:hover {
+    background-color: $darkBlue;
+    cursor: pointer;
+  }
 }
 
-#bake p {
+
+#bake text {
   position: relative;
   top: 5px;
 }
@@ -205,8 +187,7 @@ h2 {
 }
 
 #message {
-  font-family: raleway;
-  font-size: 9px;
+  font-size: 15px;
   display: inline-block;
   margin-left: 10px;
   margin-right: 50px;
@@ -218,7 +199,7 @@ h2 {
 #cookie-holder {
   position: absolute;
   bottom: 60px;
-  left: 30px;
+  left: 42px;
 }
 
 .knob {
@@ -230,11 +211,26 @@ h2 {
 
   &:before {
     content: '';
-    width: 10px;
+    z-index: 1;
+    width: 8px;
     height: 30px;
     position: absolute;
-    background-color: grey;
+    background-color: $grey;
     top: 5px;
+    left: 15px;
+    transform: rotate(110deg);
+    -ms-transform: rotate(110deg);
+    -webkit-transform: rotate(110deg);
+    border-radius: 10px;
+  }
+
+  &:after {
+    content: '';
+    width: 12px;
+    height: 32px;
+    position: absolute;
+    background-color: $darkGrey;
+    top: 3px;
     left: 15px;
     transform: rotate(110deg);
     -ms-transform: rotate(110deg);
@@ -271,153 +267,36 @@ h2 {
 
 
 
-
-
-.animated {
-  -webkit-animation-duration: 1s;
-     -moz-animation-duration: 1s;
-       -o-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-     -moz-animation-fill-mode: both;
-       -o-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-
-.animated_fast {
-  -webkit-animation-duration: .2s;
-     -moz-animation-duration: .2s;
-       -o-animation-duration: .2s;
-          animation-duration: .2s;
-  -webkit-animation-fill-mode: both;
-     -moz-animation-fill-mode: both;
-       -o-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-
-@-webkit-keyframes bounceTop{
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-2000px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
-@-moz-keyframes bounceTop {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(-2000px);
-  }
-
-  100% {
-    opacity: 1;
-    -moz-transform: translateY(0);
-  }
-}
-@-o-keyframes bounceTop {
-  0% {
-    opacity: 0;
-    -o-transform: translateY(-2000px);
-  }
-
-  100% {
-    opacity: 1;
-    -o-transform: translateY(0);
-  }
-}
-@keyframes bounceTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-2000px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.bounceTop {
-  -webkit-animation-name: bounceTop;
-  -moz-animation-name: bounceTop;
-  -o-animation-name: bounceTop;
-  animation-name: bounceTop;
-}
-
-
-
-
-
-
-@-webkit-keyframes slideDown{
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(500px);
-  }
-}
-
-@-moz-keyframes slideDown {
-  0% {
-    opacity: 1;
-    -moz-transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -moz-transform: translateY(500px);
-  }
-}
-@-o-keyframes slideDown {
-  0% {
-    opacity: 1;
-    -o-transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -o-transform: translateY(500px);
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(500px);
-  }
-}
-
-.slideDown {
-  -webkit-animation-name: slideDown;
-  -moz-animation-name: slideDown;
-  -o-animation-name: slideDown;
-  animation-name: slideDown;
-
-}
-
-.menu_group, .oven_group {
+.hidden, .oven_group, .menu_group, #tray {
   display: none;
 }
 
 
-.hidden {
-  display: none;
+
+#add_oven {
+    position: absolute;
+    right: 490px;
+    top: 250px;
 }
 
 .showing {
   display: block;
+
+
+  &.play_box {
+    margin: 100px auto;
+    }
+  &.menu_group {
+    display: inline-block;
+    margin: 30px;
+    }
+  &#tray {
+    border: 2px solid black;
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    margin: 30px;
+    overflow: hidden;
+  }
+ 
 }

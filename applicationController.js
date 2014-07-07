@@ -9,21 +9,23 @@ var ApplicationController = function(prepTableController, ovenController) {
 
 ApplicationController.prototype.listenForMakeBatch = function() {
   var self = this;
-  $('form').on('submit', function(e) {
+  $('#make_batch').on('click', function(e) {
     e.preventDefault();
     if (self.clicked >= 3) {
     }
     else if (self.clicked == 2) {
         self.prepTableController.makeCookie();
         self.clicked = self.clicked + 1;
-        $('#tray').append("<div id='cookie'> </div><div id='cookie'> </div><div id='cookie'> </div>")
+        $('#tray').append("<div id='cookie_column'><div id='cookie'> </div><div id='cookie'> </div><div id='cookie'> </div></div>")
         $('form')[0].reset();
-        $('#menu').append("<input id='prep_batches' type='submit' value='add to oven'>")
+        $('#tray').after("<div id='add_oven'>add to oven</div>")
+        $('#add_oven').addClass('animated_fast flyInRight')
+
     }
     else {
         self.prepTableController.makeCookie();
         self.clicked = self.clicked + 1;
-        $('#tray').append("<div id='cookie'> </div><div id='cookie'> </div><div id='cookie'> </div>")
+        $('#tray').append("<div id='cookie_column'><div id='cookie'> </div><div id='cookie'> </div><div id='cookie'> </div></div>")
         $('form')[0].reset();
     }
   })
@@ -32,14 +34,23 @@ ApplicationController.prototype.listenForMakeBatch = function() {
 
 ApplicationController.prototype.listenForAddOven = function() {
   var self = this;
-  $(document).one('click', '#prep_batches', function(e) {
+  $(document).one('click', '#add_oven', function(e) {
+    console.log('yo clicked!!!')
   	var tray = self.prepTableController.tray
     for (var i = 0; i < tray.length; i++) {
       self.ovenController.oven.addItem(tray[i])
     }
-    console.log(self.ovenController.oven.cookies)
     $('#messageholder').append("<div id='message'></div><div id='message'></div><div id='message'></div>")
     $('#oven').append("<div id='cookie-holder'><div id='raw-cookie'></div><div id='raw-cookie'></div><div id='raw-cookie'></div></div>")
+
+    // $('.play_box').addClass('animated_fast slideDown')
+    // $('.#tray').addClass('animated_fast slideDown')
+
+    // $('.play_box').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      // $('.play_box').addClass('hidden');
+      // $('#tray').addClass('hidden')
+      $('.oven_group').addClass('showing animated_fast bounceTop')
+    // })
   })
 }
 
