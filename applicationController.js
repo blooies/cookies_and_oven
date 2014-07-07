@@ -43,15 +43,10 @@ ApplicationController.prototype.listenForAddOven = function() {
     $('#messageholder').append("<div id='message'></div><div id='message'></div><div id='message'></div>")
     $('#oven').append("<div id='cookie-holder'><div id='raw-cookie'></div><div id='raw-cookie'></div><div id='raw-cookie'></div></div>")
 
-    // $('.play_box').addClass('animated_fast slideDown')
-    // $('.#tray').addClass('animated_fast slideDown')
 
-    // $('.play_box').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
-      // $('.play_box').addClass('hidden');
-      // $('#tray').addClass('hidden')
       $('#tray #cookie_column').addClass('hidden')
       $('.oven_group').addClass('showing animated_fast bounceTop')
-    // })
+
   })
 }
 
