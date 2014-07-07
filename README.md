@@ -1,6 +1,4 @@
 cookies_and_oven
 ================
 
-WORK IN PROGRESS.
-
-This challenge was originally done on a private repo. Forked over to continue working and practice OOJS.
+Cookies and Oven Challenge. A mini-interactive game built purely in HTML, CSS and Javascript. Forked over from a previous challenge to continue practicing OOJS & CSS Animations.
