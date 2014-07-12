@@ -1,0 +1,308 @@
+/* line 10, application.scss */
+body {
+  font-family: 'pathway gothic one';
+  text-align: center;
+}
+
+/* line 15, application.scss */
+h2 {
+  font-size: 150px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 21, application.scss */
+#welcome {
+  font-family: 'pacifico';
+  font-size: 70px;
+}
+
+/* line 26, application.scss */
+#bake_text {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* line 32, application.scss */
+#cookie_text {
+  text-transform: uppercase;
+}
+
+/* line 36, application.scss */
+#play_button, #add_oven {
+  font-size: 24px;
+  color: #fff;
+  background-color: #82c4d6;
+  width: 150px;
+  height: 30px;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 40px auto;
+}
+/* line 45, application.scss */
+#play_button:hover, #add_oven:hover {
+  background-color: #5db2c8;
+  cursor: pointer;
+}
+
+/* line 51, application.scss */
+#add_oven {
+  position: relative;
+  left: 145px;
+  top: -150px;
+}
+
+/* line 57, application.scss */
+#make_batch {
+  font-size: 15px;
+  color: #fff;
+  background-color: #82c4d6;
+  width: 150px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 25px;
+}
+/* line 65, application.scss */
+#make_batch:hover {
+  background-color: #5db2c8;
+  cursor: pointer;
+}
+
+/* line 71, application.scss */
+#menu {
+  display: inline-block;
+  border: 2px dotted black;
+  padding: 70px 25px;
+}
+/* line 75, application.scss */
+#menu input {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 83, application.scss */
+#make {
+  font-family: 'pacifico';
+  font-size: 24px;
+}
+
+/* line 88, application.scss */
+#cookie {
+  width: 45px;
+  height: 45px;
+  margin: 3px;
+  border-radius: 30px;
+  background-color: #d4ad7e;
+  display: block;
+}
+
+/* line 97, application.scss */
+#cookie_column {
+  float: left;
+  margin-left: 10px;
+}
+
+/* line 102, application.scss */
+#oven {
+  width: 370px;
+  height: 220px;
+  border: 10px solid black;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  margin: 30px auto;
+}
+
+/* line 111, application.scss */
+#window {
+  margin-top: 45px;
+  margin-left: 25px;
+  width: 230px;
+  height: 150px;
+  border: 5px solid black;
+  position: relative;
+}
+
+/* line 120, application.scss */
+#window:before {
+  content: '';
+  width: 240px;
+  height: 30px;
+  position: absolute;
+  top: -40px;
+  left: -5px;
+  background-color: grey;
+}
+
+/* line 130, application.scss */
+#window:after {
+  content: '';
+  width: 230px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
+/* line 140, application.scss */
+#controls {
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+
+/* line 146, application.scss */
+#bake {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 70px;
+  height: 30px;
+  background-color: #82c4d6;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+}
+/* line 156, application.scss */
+#bake:hover {
+  background-color: #5db2c8;
+  cursor: pointer;
+}
+
+/* line 162, application.scss */
+#bake text {
+  position: relative;
+  top: 5px;
+}
+
+/* line 167, application.scss */
+#raw-cookie {
+  width: 50px;
+  height: 20px;
+  background-color: #d4ad7e;
+  border-radius: 20px 20px 0 0;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* line 176, application.scss */
+#message_holder {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+}
+
+/* line 182, application.scss */
+#message {
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 50px;
+  width: 10px;
+  height: 10px;
+}
+
+/* line 191, application.scss */
+#cookie-holder {
+  position: absolute;
+  bottom: 60px;
+  left: 42px;
+}
+
+/* line 197, application.scss */
+.knob {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50px;
+  position: relative;
+}
+/* line 204, application.scss */
+.knob:before {
+  content: '';
+  z-index: 1;
+  width: 8px;
+  height: 30px;
+  position: absolute;
+  background-color: #868686;
+  top: 5px;
+  left: 15px;
+  transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  -webkit-transform: rotate(110deg);
+  border-radius: 10px;
+}
+/* line 219, application.scss */
+.knob:after {
+  content: '';
+  width: 12px;
+  height: 32px;
+  position: absolute;
+  background-color: #2b2b2b;
+  top: 3px;
+  left: 15px;
+  transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  -webkit-transform: rotate(110deg);
+  border-radius: 10px;
+}
+
+/* line 234, application.scss */
+.one {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+}
+
+/* line 240, application.scss */
+.two {
+  position: absolute;
+  top: 130px;
+  right: 30px;
+}
+
+/* line 246, application.scss */
+.still_gooey {
+  background-color: #c18644 !important;
+}
+
+/* line 250, application.scss */
+.just_right {
+  background-color: #966132 !important;
+}
+
+/* line 254, application.scss */
+.crispy {
+  background-color: #21190b !important;
+}
+
+/* line 258, application.scss */
+.hidden, .oven_box, .menu_group, #tray {
+  display: none;
+}
+
+/* line 262, application.scss */
+.showing {
+  display: block;
+}
+/* line 265, application.scss */
+.showing.play_box {
+  margin: 100px auto;
+}
+/* line 268, application.scss */
+.showing.menu_group {
+  display: inline-block;
+  margin: 30px;
+}
+/* line 272, application.scss */
+.showing#tray {
+  border: 2px solid black;
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+  margin: 30px;
+  overflow: hidden;
+}

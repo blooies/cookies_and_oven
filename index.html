@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Bake-A-Cookie!</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./application.css" />
+  <link rel="stylesheet" type="text/css" href="./animation.css" />
+  <script type="text/javascript" src="./initialize.js"></script>
+  <script type="text/javascript" src="./preptable/prepTableController.js"></script>  
+  <script type="text/javascript" src="./applicationController.js"></script>  
+  <script type="text/javascript" src="./oven/ovenView.js"></script>  
+  <script type="text/javascript" src="./oven/ovenController.js"></script>  
+  <script type="text/javascript" src="./cookieModel.js"></script>
+  <script type="text/javascript" src="./ovenModel.js"></script>
+</head>
+
+<body>
+  <section class='intro'>
+    <h2><text id='welcome'>welcome to</text><text id='bake_text'>bake-a</text><text id='cookie_text'>cookie!</text></h2>
+    <div id="play_button">play!</div>
+    <br><br>
+  </section>
+
+<section class='play_box'>
+    <section class='menu_group'>
+      <text id="make">make 3 types of cookies:</text><br>
+      <div id="menu">
+        <form id="new_batch" name="new_batch">
+          Type of Cookie:<br>
+          <input name="batch_type" type="text" placeholder="ex. oatmeal raisin" required><br>
+          Bake Time:<br>
+          <input name="bake_time" type="number" min="0" max="10"/ required><br>
+          <div id="make_batch">make batch!</div>
+        </form>
+      </div>
+  </section>
+
+      <div id="tray">
+      </div>
+</section>
+
+  <section class='oven_box'>
+    <div id="oven">
+      <div id="window">
+        <div id="message_holder"></div>
+      </div>
+      <div id ="controls">
+        <div id="bake"><text>bake!</text>
+        </div>
+        <div class="knob one">
+        </div>
+        <div class="knob two">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+
+</html>
+
