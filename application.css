@@ -30,7 +30,7 @@ h2 {
 }
 
 /* line 36, application.scss */
-#play_button, #add_oven {
+#play_button, input[type='submit'] {
   font-size: 24px;
   color: #fff;
   background-color: #82c4d6;
@@ -41,19 +41,26 @@ h2 {
   margin: 40px auto;
 }
 /* line 45, application.scss */
-#play_button:hover, #add_oven:hover {
+#play_button:hover, input[type='submit']:hover {
   background-color: #5db2c8;
   cursor: pointer;
 }
 
 /* line 51, application.scss */
+input[type='submit'] {
+  font-size: 12px;
+  padding: 10px 10px 20px 10px;
+  margin-top: 10px;
+}
+
+/* line 58, application.scss */
 #add_oven {
   position: relative;
   left: 145px;
   top: -150px;
 }
 
-/* line 57, application.scss */
+/* line 64, application.scss */
 #make_batch {
   font-size: 15px;
   color: #fff;
@@ -63,19 +70,19 @@ h2 {
   padding: 5px;
   border-radius: 25px;
 }
-/* line 65, application.scss */
+/* line 72, application.scss */
 #make_batch:hover {
   background-color: #5db2c8;
   cursor: pointer;
 }
 
-/* line 71, application.scss */
+/* line 78, application.scss */
 #menu {
   display: inline-block;
   border: 2px dotted black;
   padding: 70px 25px;
 }
-/* line 75, application.scss */
+/* line 82, application.scss */
 #menu input {
   width: 150px;
   height: 25px;
@@ -83,13 +90,13 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* line 83, application.scss */
+/* line 90, application.scss */
 #make {
   font-family: 'pacifico';
   font-size: 24px;
 }
 
-/* line 88, application.scss */
+/* line 95, application.scss */
 #cookie {
   width: 45px;
   height: 45px;
@@ -99,13 +106,13 @@ h2 {
   display: block;
 }
 
-/* line 97, application.scss */
+/* line 104, application.scss */
 #cookie_column {
   float: left;
   margin-left: 10px;
 }
 
-/* line 102, application.scss */
+/* line 109, application.scss */
 #oven {
   width: 370px;
   height: 220px;
@@ -115,7 +122,7 @@ h2 {
   margin: 30px auto;
 }
 
-/* line 111, application.scss */
+/* line 118, application.scss */
 #window {
   margin-top: 45px;
   margin-left: 25px;
@@ -125,7 +132,7 @@ h2 {
   position: relative;
 }
 
-/* line 120, application.scss */
+/* line 127, application.scss */
 #window:before {
   content: '';
   width: 240px;
@@ -136,7 +143,7 @@ h2 {
   background-color: grey;
 }
 
-/* line 130, application.scss */
+/* line 137, application.scss */
 #window:after {
   content: '';
   width: 230px;
@@ -147,14 +154,14 @@ h2 {
   background-color: #000;
 }
 
-/* line 140, application.scss */
+/* line 147, application.scss */
 #controls {
   position: absolute;
   top: 25px;
   right: 0;
 }
 
-/* line 146, application.scss */
+/* line 153, application.scss */
 #bake {
   position: absolute;
   top: 20px;
@@ -166,19 +173,19 @@ h2 {
   border-radius: 5px;
   color: #fff;
 }
-/* line 156, application.scss */
+/* line 163, application.scss */
 #bake:hover {
   background-color: #5db2c8;
   cursor: pointer;
 }
 
-/* line 162, application.scss */
+/* line 169, application.scss */
 #bake text {
   position: relative;
   top: 5px;
 }
 
-/* line 167, application.scss */
+/* line 174, application.scss */
 #raw-cookie {
   width: 50px;
   height: 20px;
@@ -188,14 +195,14 @@ h2 {
   margin: 10px;
 }
 
-/* line 176, application.scss */
+/* line 183, application.scss */
 #message_holder {
   position: absolute;
   top: 50px;
   text-align: center;
 }
 
-/* line 182, application.scss */
+/* line 189, application.scss */
 #message {
   font-size: 15px;
   display: inline-block;
@@ -205,14 +212,14 @@ h2 {
   height: 10px;
 }
 
-/* line 191, application.scss */
+/* line 198, application.scss */
 #cookie-holder {
   position: absolute;
   bottom: 60px;
   left: 42px;
 }
 
-/* line 197, application.scss */
+/* line 204, application.scss */
 .knob {
   width: 40px;
   height: 40px;
@@ -220,7 +227,7 @@ h2 {
   border-radius: 50px;
   position: relative;
 }
-/* line 204, application.scss */
+/* line 211, application.scss */
 .knob:before {
   content: '';
   z-index: 1;
@@ -235,7 +242,7 @@ h2 {
   -webkit-transform: rotate(110deg);
   border-radius: 10px;
 }
-/* line 219, application.scss */
+/* line 226, application.scss */
 .knob:after {
   content: '';
   width: 12px;
@@ -250,54 +257,54 @@ h2 {
   border-radius: 10px;
 }
 
-/* line 234, application.scss */
+/* line 241, application.scss */
 .one {
   position: absolute;
   top: 70px;
   right: 30px;
 }
 
-/* line 240, application.scss */
+/* line 247, application.scss */
 .two {
   position: absolute;
   top: 130px;
   right: 30px;
 }
 
-/* line 246, application.scss */
+/* line 253, application.scss */
 .still_gooey {
   background-color: #c18644 !important;
 }
 
-/* line 250, application.scss */
+/* line 257, application.scss */
 .just_right {
   background-color: #966132 !important;
 }
 
-/* line 254, application.scss */
+/* line 261, application.scss */
 .crispy {
   background-color: #21190b !important;
 }
 
-/* line 258, application.scss */
+/* line 265, application.scss */
 .hidden, .oven_box, .menu_group, #tray {
   display: none;
 }
 
-/* line 262, application.scss */
+/* line 269, application.scss */
 .showing {
   display: block;
 }
-/* line 265, application.scss */
+/* line 272, application.scss */
 .showing.play_box {
   margin: 100px auto;
 }
-/* line 268, application.scss */
+/* line 275, application.scss */
 .showing.menu_group {
   display: inline-block;
   margin: 30px;
 }
-/* line 272, application.scss */
+/* line 279, application.scss */
 .showing#tray {
   border: 2px solid black;
   width: 200px;
