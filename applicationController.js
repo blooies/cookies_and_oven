@@ -30,7 +30,7 @@ ApplicationController.prototype.listenForPlayButton = function() {
 
 ApplicationController.prototype.listenForMakeBatch = function() {
   var self = this;
-  $('#make_batch').on('click', function(e) {
+  $("#new_batch").on('submit', function(e) {
     e.preventDefault();
     if (self.clicked >= 3) {
     }

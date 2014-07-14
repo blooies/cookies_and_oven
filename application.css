@@ -29,8 +29,8 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 36, application.scss */
-#play_button, input[type='submit'] {
+/* line 37, application.scss */
+#play_button, #add_oven, input[type='submit'] {
   font-size: 24px;
   color: #fff;
   background-color: #82c4d6;
@@ -40,13 +40,13 @@ h2 {
   padding: 10px;
   margin: 40px auto;
 }
-/* line 45, application.scss */
-#play_button:hover, input[type='submit']:hover {
+/* line 46, application.scss */
+#play_button:hover, #add_oven:hover, input[type='submit']:hover {
   background-color: #5db2c8;
   cursor: pointer;
 }
 
-/* line 51, application.scss */
+/* line 52, application.scss */
 input[type='submit'] {
   font-size: 12px;
   padding: 10px 10px 20px 10px;
@@ -61,28 +61,12 @@ input[type='submit'] {
 }
 
 /* line 64, application.scss */
-#make_batch {
-  font-size: 15px;
-  color: #fff;
-  background-color: #82c4d6;
-  width: 150px;
-  height: 20px;
-  padding: 5px;
-  border-radius: 25px;
-}
-/* line 72, application.scss */
-#make_batch:hover {
-  background-color: #5db2c8;
-  cursor: pointer;
-}
-
-/* line 78, application.scss */
 #menu {
   display: inline-block;
   border: 2px dotted black;
   padding: 70px 25px;
 }
-/* line 82, application.scss */
+/* line 68, application.scss */
 #menu input {
   width: 150px;
   height: 25px;
@@ -90,13 +74,13 @@ input[type='submit'] {
   margin-bottom: 10px;
 }
 
-/* line 90, application.scss */
+/* line 76, application.scss */
 #make {
   font-family: 'pacifico';
   font-size: 24px;
 }
 
-/* line 95, application.scss */
+/* line 81, application.scss */
 #cookie {
   width: 45px;
   height: 45px;
@@ -106,13 +90,13 @@ input[type='submit'] {
   display: block;
 }
 
-/* line 104, application.scss */
+/* line 90, application.scss */
 #cookie_column {
   float: left;
   margin-left: 10px;
 }
 
-/* line 109, application.scss */
+/* line 95, application.scss */
 #oven {
   width: 370px;
   height: 220px;
@@ -122,7 +106,7 @@ input[type='submit'] {
   margin: 30px auto;
 }
 
-/* line 118, application.scss */
+/* line 104, application.scss */
 #window {
   margin-top: 45px;
   margin-left: 25px;
@@ -132,7 +116,7 @@ input[type='submit'] {
   position: relative;
 }
 
-/* line 127, application.scss */
+/* line 113, application.scss */
 #window:before {
   content: '';
   width: 240px;
@@ -143,7 +127,7 @@ input[type='submit'] {
   background-color: grey;
 }
 
-/* line 137, application.scss */
+/* line 123, application.scss */
 #window:after {
   content: '';
   width: 230px;
@@ -154,14 +138,14 @@ input[type='submit'] {
   background-color: #000;
 }
 
-/* line 147, application.scss */
+/* line 133, application.scss */
 #controls {
   position: absolute;
   top: 25px;
   right: 0;
 }
 
-/* line 153, application.scss */
+/* line 139, application.scss */
 #bake {
   position: absolute;
   top: 20px;
@@ -173,19 +157,19 @@ input[type='submit'] {
   border-radius: 5px;
   color: #fff;
 }
-/* line 163, application.scss */
+/* line 149, application.scss */
 #bake:hover {
   background-color: #5db2c8;
   cursor: pointer;
 }
 
-/* line 169, application.scss */
+/* line 155, application.scss */
 #bake text {
   position: relative;
   top: 5px;
 }
 
-/* line 174, application.scss */
+/* line 160, application.scss */
 #raw-cookie {
   width: 50px;
   height: 20px;
@@ -195,14 +179,14 @@ input[type='submit'] {
   margin: 10px;
 }
 
-/* line 183, application.scss */
+/* line 169, application.scss */
 #message_holder {
   position: absolute;
   top: 50px;
   text-align: center;
 }
 
-/* line 189, application.scss */
+/* line 175, application.scss */
 #message {
   font-size: 15px;
   display: inline-block;
@@ -212,14 +196,14 @@ input[type='submit'] {
   height: 10px;
 }
 
-/* line 198, application.scss */
+/* line 184, application.scss */
 #cookie-holder {
   position: absolute;
   bottom: 60px;
   left: 42px;
 }
 
-/* line 204, application.scss */
+/* line 190, application.scss */
 .knob {
   width: 40px;
   height: 40px;
@@ -227,7 +211,7 @@ input[type='submit'] {
   border-radius: 50px;
   position: relative;
 }
-/* line 211, application.scss */
+/* line 197, application.scss */
 .knob:before {
   content: '';
   z-index: 1;
@@ -242,7 +226,7 @@ input[type='submit'] {
   -webkit-transform: rotate(110deg);
   border-radius: 10px;
 }
-/* line 226, application.scss */
+/* line 212, application.scss */
 .knob:after {
   content: '';
   width: 12px;
@@ -257,54 +241,54 @@ input[type='submit'] {
   border-radius: 10px;
 }
 
-/* line 241, application.scss */
+/* line 227, application.scss */
 .one {
   position: absolute;
   top: 70px;
   right: 30px;
 }
 
-/* line 247, application.scss */
+/* line 233, application.scss */
 .two {
   position: absolute;
   top: 130px;
   right: 30px;
 }
 
-/* line 253, application.scss */
+/* line 239, application.scss */
 .still_gooey {
   background-color: #c18644 !important;
 }
 
-/* line 257, application.scss */
+/* line 243, application.scss */
 .just_right {
   background-color: #966132 !important;
 }
 
-/* line 261, application.scss */
+/* line 247, application.scss */
 .crispy {
   background-color: #21190b !important;
 }
 
-/* line 265, application.scss */
+/* line 251, application.scss */
 .hidden, .oven_box, .menu_group, #tray {
   display: none;
 }
 
-/* line 269, application.scss */
+/* line 255, application.scss */
 .showing {
   display: block;
 }
-/* line 272, application.scss */
+/* line 258, application.scss */
 .showing.play_box {
   margin: 100px auto;
 }
-/* line 275, application.scss */
+/* line 261, application.scss */
 .showing.menu_group {
   display: inline-block;
   margin: 30px;
 }
-/* line 279, application.scss */
+/* line 265, application.scss */
 .showing#tray {
   border: 2px solid black;
   width: 200px;

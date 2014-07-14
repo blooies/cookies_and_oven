@@ -33,7 +33,8 @@ h2 {
   text-transform: uppercase;
 }
 
-#play_button, input[type='submit'] {
+
+#play_button, #add_oven, input[type='submit'] {
   font-size: 24px;
   color: #fff;
   background-color: $blue;
@@ -54,25 +55,10 @@ input[type='submit'] {
   margin-top: 10px;
 }
 
-
 #add_oven {
     position: relative;
     left: 145px;
     top: -150px;
-}
-
-#make_batch {
-  font-size: 15px;
-  color: #fff;
-  background-color: $blue;
-  width: 150px;
-  height: 20px;
-  padding: 5px;
-  border-radius: 25px;
-  &:hover {
-    background-color: $darkBlue;
-    cursor: pointer;
-  }
 }
 
 #menu {
